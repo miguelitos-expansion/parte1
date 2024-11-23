@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 75%;
+}
+
+.logo{
+    height: 85%;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+main{
+    display: flex;
+    height: 90.5vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    font-family: monospace;
+}
+
+.Card{
+    background-color: rgb(96, 104, 101);
+    width: 385px;
+    height: 420px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Cardimagen{
+    color: aliceblue;
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.oscuroCard{
+    background-color: rgba(0, 0, 0, 0.416);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.--CardCita{
+  background-image: url(imagenes/AgendarEmpresa.jpg);
+  background-size: cover;
+}
+
+.--CardExpansion{
+ background-image: url(imagenes/expansionEmpresas.jpg);
+ background-size: cover;
+ background-position: bottom;
+}
+
+.--CardIntegral{
+    background-image: url(imagenes/servicioIntegral.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.CardBoton{
+    background-color: black;
+    color: white;
+    margin: 50px 0 200px 0;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+
+.informacion{
+    position: absolute;
+    background-color: white;
+    height: 650px;
+    width: 1000px;
+    top: 10%;
+    right: 20%;
+    border-radius: 10px;
+    display: none;
+}
+
+.informacionFondo{
+    background-color: rgba(0, 0, 0, 0.392);
+    position: absolute;
+    height: 105vh;
+    width: 100vw;
+    top: 0%;
+    right: 0%;
+    display: none;
+}
+
+footer{
+    background-color: rgb(38, 36, 36);
+    width: 100%;
+    height: 35vh;
+}
+
+
+#pestanaInfo:target{
+    .informacion{
+        display:block;
+    }
+    .informacionFondo{
+        display:block;
+    }
+}

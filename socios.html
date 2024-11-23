@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Miguelitos</title>
+    <link rel="stylesheet" href="socios.css">
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Socios - Registro de Ingresos</h1>
+    </header>
+    <main>
+        <form id="ingresosForm">
+            <h2>Registrar Ingresos Diarios</h2>
+            <div>
+                <label for="vendedor">Nombre del Vendedor</label>
+                <input type="text" id="vendedor" name="vendedor" placeholder="Ingresa el nombre del vendedor" required>
+            </div>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div>
+                <label for="ingreso">Ingreso Diario</label>
+                <input type="number" id="ingreso" name="ingreso" placeholder="Monto del ingreso en $" step="0.01" required>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById("ingresosForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const vendedor = document.getElementById("vendedor").value;
+            const fecha = document.getElementById("fecha").value;
+            const ingreso = document.getElementById("ingreso").value;
+
+            alert(`Ingreso registrado:\nVendedor: ${vendedor}\nFecha: ${fecha}\nMonto: $${ingreso}`);
+        });
+    </script>
+</body>
+</body>
+</html>
