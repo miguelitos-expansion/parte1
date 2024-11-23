@@ -27,8 +27,10 @@
                 <input type="number" id="ingreso" name="ingreso" placeholder="Monto del ingreso en $" step="0.01" required>
             </div>
             <button type="submit">Registrar</button>
+            <a href="index.html">Volver</a>
         </form>
-    </main>
+     
+   
     <script>
         document.getElementById("ingresosForm").addEventListener("submit", function(event) {
             event.preventDefault();
@@ -39,6 +41,5 @@
             alert(`Ingreso registrado:\nVendedor: ${vendedor}\nFecha: ${fecha}\nMonto: $${ingreso}`);
         });
     </script>
-</body>
 </body>
 </html>
